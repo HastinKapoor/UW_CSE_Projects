@@ -1,0 +1,56 @@
+;Hastin Kapoor
+;2061247
+
+#lang racket
+
+(provide (all-defined-out))
+
+(define (factorial n)
+  (if (< n 2)
+      1
+      (* n (factorial (- n 1)))))
+
+(define (comb n k)
+  (/ (factorial n) (* (factorial k) (factorial (- n k)))))
+
+(define (zip a b)
+  (cond [(null? a) b]
+        [(null? b) a]
+        [else (cons (car a) (cons (car b) (zip (cdr a) (cdr b))))]))
+
+(define (unzip a)
+  (cond [(null? a) (list '() '())]
+        [(null? (cdr a)) (list '() a)]
+        [else (list (cons (car a) (car (unzip (cddr a)))) (cons (cadr a) (cadr (unzip (cddr a)))))]))
+
+(define (expandHelper n a)
+  (if (eqv? n 0)
+      '()
+      (cons a (expandHelper (- n 1) a))))
+
+(define (expand lst)
+  (cond [(null? lst) lst]
+        [(list? (car lst)) (append (expandHelper (caar lst) (cadar lst)) (expand (cdr lst)))]
+        [else (cons (car lst) (expand (cdr lst)))]))
+
+(define (value node)
+  (car node))
+
+(define (left node)
+  (cadr node))
+
+(define (right node)
+  (caddr node))
+
+(define (size tree)
+  (if (null? tree)
+      0
+      (+ 1 (size (left tree)) (size (right tree)))))
+
+(define (contains item tree)
+  (cond [(null? tree) #f]
+        [(equal? item (value tree)) #t]
+        [else (or (contains item (left tree))(contains item (right tree)))]))
+
+(define (leaves tree)
+  (cond [(and (null?

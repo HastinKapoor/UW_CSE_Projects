@@ -1,0 +1,62 @@
+
+#Hastin Kapoor
+#2061247
+
+Microsoft Windows [Version 10.0.19045.2965]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Hastin Kapoor>cd ./Documents/CSE 413 Homework/Ruby
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>ruby hw7.rb
+"thisisatestidentifier* 2+3 **a-sqrt(89.02)"
+identifier thisisatestidentifier
+*
+number 2
++
+number 3
+**
+identifier a
+-
+sqrt
+(
+number 89.02
+)
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>ruby hw7.rb
+"(1 + b) ** test0"
+(
+number 1
++
+identifier b
+)
+**
+identifier test0
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>ruby hw7.rb
+"simpletestidentifier"
+identifier simpletestidentifier
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>ruby hw7.rb
+"1"
+number 1
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>ruby hw7.rb
+"1.0"
+number 1.0
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>ruby hw7.rb
+"1 + - * ** / sqrt ( )"
+number 1
++
+-
+**
+*
+/
+sqrt
+(
+)
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>ruby hw7.rb
+"exit"
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>

@@ -1,0 +1,60 @@
+
+# Hastin Kapoor
+# 2061247
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>ruby calc.rb
+x = 2
+x assigned with value 2.0
+
+
+y = 3
+y assigned with value 3.0
+
+
+list
+{"PI"=>3.141592653589793, "x"=>2.0, "y"=>3.0}
+x + y
+5.0
+
+x * y
+6.0
+
+x ** y
+8.0
+
+x ** y ** x
+512.0
+
+(x ** y) ** x
+64.0
+
+clear x
+x value cleared
+
+list
+{"PI"=>3.141592653589793, "y"=>3.0}
+2 + 3 * 4 + 5
+19.0
+
+(2 + 3) * (4 + 5)
+45.0
+
+sqrt(y ** 2)
+3.0
+
+sqrt(2.0e1)
+4.47213595499958
+
+sqrt(10e5)
+1000.0
+
+10 - y ** 3
+-17.0
+
+x
+x not defined
+
+
+exit
+
+C:\Users\Hastin Kapoor\Documents\CSE 413 Homework\Ruby>

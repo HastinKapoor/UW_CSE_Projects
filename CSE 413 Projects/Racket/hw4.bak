@@ -1,0 +1,11 @@
+;; Hastin Kapoor
+;; 2061247
+
+#lang racket
+
+(provide (all-defined-out))
+
+(define (red-blue)
+  (letrec ([red (lambda () (cons "red" (lambda () (blue))))]
+           [blue (lambda () (cons "blue" (lambda () (red))))])
+    red))

@@ -1,0 +1,15 @@
+;; Hastin Kapoor
+;; 2061247
+
+#lang racket
+
+(provide (all-defined-out))
+
+;; Auxillary function for lengtht
+(define (lengthtaux lst acc)
+  (if (null? lst)
+      acc
+      (lengthtaux (cdr lst) (+ 1 acc))))
+
+(define (lengtht lst)
+  (lengtht lst 0))

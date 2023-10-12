@@ -1,0 +1,16 @@
+;; Hastin Kapoor
+;; 2061247
+
+#lang racket
+
+(provide (all-defined-out))
+
+(define (diff v E)
+  (cond [(number? E) 0]
+        [(equal? v E) 1]
+        ;; ...
+        [( ) ]))
+
+(define (diff-sum x E))        ; differentiate (+ x1 x2 ...)
+(define (diff-product x E) ...)    ;               (* x y)
+(define (diff-expt x E) ...)       ;               (expt x y)
